@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .masonry {
+            column-count: 4;
+            column-gap: 1rem;
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 1024px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .masonry {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="text-center py-6 bg-gray-800 text-white">
+        <h1 class="text-4xl font-bold">Art Gallery</h1>
+        <p class="text-lg">Featuring stunning photos from Unsplash</p>
+    </header>
+    <main class="container mx-auto py-8">
+        <div class="masonry">
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Art 1" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb" alt="Art 2" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df" alt="Art 3" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913" alt="Art 4" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Art 5" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Art 6" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Art 7" class="w-full h-auto">
+            </div>
+            <div class="masonry-item overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb" alt="Art 8" class="w-full h-auto">
+            </div>
+        </div>
+    </main>
+    <footer class="text-center py-4 bg-gray-800 text-white">
+        <p>&copy; 2023 Art Gallery. Photos by <a href="https://unsplash.com" class="text-blue-400 hover:underline">Unsplash</a>.</p>
+    </footer>
+</body>
+</html>
